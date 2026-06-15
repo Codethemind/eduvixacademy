@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Courses — Eduvix Academy | NIOS, Degree, PG & Career Programs</title>
+  <meta name="description" content="Explore all courses at Eduvix Academy — NIOS Secondary & Senior Secondary, Distance Degree, PG, Diploma, and Career Skill Development Programs. Apply Now!" />
+  <link rel="icon" type="image/png" href="images/logo.png" />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .tab-panel { display: none; }
+    .tab-panel.active { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
+    .course-highlight {
+      background: linear-gradient(135deg, rgba(30,58,138,.06), rgba(30,58,138,.02));
+      border-radius: var(--radius);
+      padding: 10px 14px;
+      font-size: .82rem;
+      color: var(--gray-700);
+      margin-bottom: 14px;
+      display: flex; gap: 8px; align-items: center;
+    }
+    .course-highlight::before { content: '✓'; color: var(--success); font-weight: 800; }
+    @media(max-width:768px) {
+      .tab-panel.active { grid-template-columns: 1fr; }
+    }
+    @media(max-width:1024px) {
+      .tab-panel.active { grid-template-columns: 1fr 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar scrolled" id="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="logo"><img src="images/logo.png" alt="Eduvix Academy Logo" /></a>
+      <ul class="nav-links">
+        <li><a href="index.html"      class="nav-link">Home</a></li>
+        <li><a href="about.html"      class="nav-link">About</a></li>
+        <li><a href="courses.html"    class="nav-link active">Courses</a></li>
+        <li><a href="admissions.html" class="nav-link">Admissions</a></li>
+        <li><a href="support.html"    class="nav-link">Support</a></li>
+        <li><a href="success-stories.html" class="nav-link">Success Stories</a></li>
+        <li><a href="contact.html"    class="nav-link">Contact</a></li>
+      </ul>
+      <a href="admissions.html" class="btn btn-gold btn-sm nav-cta">Apply Now</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html" class="nav-link">Home</a><a href="about.html" class="nav-link">About</a>
+      <a href="courses.html" class="nav-link">Courses</a><a href="admissions.html" class="nav-link">Admissions</a>
+      <a href="support.html" class="nav-link">Support</a><a href="success-stories.html" class="nav-link">Success Stories</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+      <a href="admissions.html" class="btn btn-primary">Apply Now</a>
+    </div>
+  </nav>
+
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumb"><a href="index.html">Home</a><span>/</span><span>Courses</span></div>
+      <h1>Explore Our Programs</h1>
+      <p>From NIOS to Degree programs and Career skills — find the perfect course to match your ambitions.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="badge badge-gold">📚 All Programs</span>
+        <h2>Choose Your <span class="gradient-text">Learning Path</span></h2>
+        <p>Every course is designed to help you succeed — with full support from registration to result.</p>
+      </div>
+
+      <!-- TAB BUTTONS -->
+      <div class="course-tab-btns reveal">
+        <button class="tab-btn active" data-tab="nios" id="tab-nios">🎓 NIOS Programs</button>
+        <button class="tab-btn" data-tab="higher" id="tab-higher">🏛️ Higher Education</button>
+        <button class="tab-btn" data-tab="career" id="tab-career">💼 Career Programs</button>
+      </div>
+
+      <!-- NIOS PANEL -->
+      <div class="tab-panel active" data-panel="nios">
+
+        <div class="course-card reveal">
+          <div class="course-card-header">
+            <div class="course-emoji">📘</div>
+            <h4>NIOS Secondary (10th)</h4>
+            <span class="course-badge-header">Class 10 Equivalent</span>
+          </div>
+          <div class="course-card-body">
+            <div class="course-meta">
+              <span class="course-meta-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 6–12 Months</span>
+              <span class="course-meta-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg> Any Age</span>
+            </div>
+            <p class="course-desc">Complete your 10th standard through NIOS — India's largest open schooling board. Fully recognized and equivalent to CBSE/State Board.</p>
+            <div class="course-eligibility"><strong>Eligibility:</strong> No prior qualification required. Open to all ages.</div>
+            <div class="course-highlight">5 subjects including Languages, Math, Science & Social</div>
+            <div class="course-highlight">Flexible exam schedule — 2 sessions per year</div>
+            <div class="course-highlight">Online + offline study materials provided</div>
+            <a href="https://wa.me/917736123406?text=I%20want%20to%20know%20about%20NIOS%20Secondary%20(10th)." class="btn btn-primary" style="width:100%;justify-content:center;" target="_blank">Apply Now →</a>
+          </div>
+        </div>
+
+        <div class="course-card reveal" data-delay="100">
+          <div class="course-card-header">
+            <div class="course-emoji">📗</div>
+            <h4>NIOS Senior Secondary (12th)</h4>
+            <span class="course-badge-header">Class 12 Equivalent</span>
+          </div>
+          <div class="course-card-body">
+            <div class="course-meta">
+              <span class="course-meta-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 6–18 Months</span>
+              <span class="course-meta-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg> 10th Pass</span>
+            </div>
+            <p class="course-desc">Achieve your 12th standard certificate through NIOS with full academic support. Gateway to degree programs, government jobs, and competitive exams.</p>
+            <div class="course-eligibility"><strong>Eligibility:</strong> Must have passed Class 10 from any recognized board.</div>
+            <div class="course-highlight">Choice of 5 subjects from Science, Commerce & Arts streams</div>
+            <div class="course-highlight">Practical exams conducted at partner centers</div>
+            <div class="course-highlight">Accepted for all degree programs nationwide</div>
+            <a href="https://wa.me/917736123406?text=I%20want%20to%20know%20about%20NIOS%20Senior%20Secondary%20(12th)." class="btn btn-primary" style="width:100%;justify-content:center;" target="_blank">Apply Now →</a>
+          </div>
+        </div>
+
+        <div class="course-card reveal" data-delay="200">
+          <div class="course-card-header">
+            <div class="course-emoji">🔁</div>
+            <h4>Transfer of Credit (TOC)</h4>
+            <span class="course-badge-header">Failed Subject Support</span>
+          </div>
+          <div class="course-card-body">
+            <div class="course-meta">
+              <span class="course-meta-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 3–6 Months</span>
+              <span class="course-meta-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg> Failed Students</span>
+            </div>
+            <p class="course-desc">Failed only 1 or 2 subjects? Don't repeat the whole year! Transfer your credits to NIOS and write only the failed subjects to complete your certificate.</p>
+            <div class="course-eligibility"><strong>Eligibility:</strong> Students who failed 10th/12th from any State Board or CBSE.</div>
+            <div class="course-highlight">Re-appear only in failed subjects</div>
+            <div class="course-highlight">No need to repeat passed subjects</div>
+            <div class="course-highlight">Faster completion — save a full year</div>
+            <a href="https://wa.me/917736123406?text=I%20want%20to%20know%20about%20NIOS%20TOC%20program." class="btn btn-primary" style="width:100%;justify-content:center;" target="_blank">Apply Now →</a>
+          </div>
+        </div>
+
+        <div class="course-card reveal" data-delay="300">
+          <div class="course-card-header" style="background:linear-gradient(135deg,#b45309,#d97706);">
+            <div class="course-emoji">🆘</div>
+            <h4>Failed Student Support</h4>
+            <span class="course-badge-header">Special Program</span>
+          </div>
+          <div class="course-card-body">
+            <div class="course-meta">
+              <span class="course-meta-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> Ongoing</span>
+              <span class="course-meta-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg> Any Student</span>
+            </div>
+            <p class="course-desc">Comprehensive support program for students who have failed exams. We analyze your weak areas, create a personalized study plan, and guide you to pass with confidence.</p>
+            <div class="course-eligibility"><strong>Eligibility:</strong> Any student who has failed their board exams.</div>
+            <div class="course-highlight">Personal academic counseling session</div>
+            <div class="course-highlight">Subject-wise remedial classes</div>
+            <div class="course-highlight">Previous year question paper practice</div>
+            <a href="https://wa.me/917736123406?text=I%20need%20help%20with%20NIOS%20failed%20student%20support." class="btn btn-primary" style="width:100%;justify-content:center;background:linear-gradient(135deg,#b45309,#d97706);" target="_blank">Get Help Now →</a>
+          </div>
+        </div>
+
+        <div class="course-card reveal" data-delay="400">
+          <div class="course-card-header" style="background:linear-gradient(135deg,#0f766e,#14b8a6);">
+            <div class="course-emoji">📝</div>
+            <h4>NIOS On-Demand Exam</h4>
+            <span class="course-badge-header">Appear Any Time</span>
+          </div>
+          <div class="course-card-body">
+            <div class="course-meta">
+              <span class="course-meta-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> Year Round</span>
+              <span class="course-meta-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg> Registered Students</span>
+            </div>
+            <p class="course-desc">NIOS On-Demand Exam (ODE) lets you write exams at your convenience — no need to wait for scheduled exam dates. Fast-track your completion!</p>
+            <div class="course-eligibility"><strong>Eligibility:</strong> NIOS enrolled students who have completed preparation.</div>
+            <div class="course-highlight">Appear for exams any time of the year</div>
+            <div class="course-highlight">Results within 45 days</div>
+            <div class="course-highlight">Available for 10th & 12th programs</div>
+            <a href="https://wa.me/917736123406?text=I%20want%20to%20know%20about%20NIOS%20On-Demand%20Exam." class="btn btn-primary" style="width:100%;justify-content:center;background:linear-gradient(135deg,#0f766e,#14b8a6);" target="_blank">Apply Now →</a>
+          </div>
+        </div>
+
+        <div class="course-card reveal" data-delay="500">
+          <div class="course-card-header" style="background:linear-gradient(135deg,#1d4ed8,#3b82f6);">
+            <div class="course-emoji">🌐</div>
+            <h4>NIOS Vocational Programs</h4>
+            <span class="course-badge-header">Skill + Certificate</span>
+          </div>
+          <div class="course-card-body">
+            <div class="course-meta">
+              <span class="course-meta-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 6–12 Months</span>
+              <span class="course-meta-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg> 8th Pass+</span>
+            </div>
+            <p class="course-desc">Combine academics with vocational skills — earn your NIOS certificate while gaining practical trade skills recognized by the government and industry.</p>
+            <div class="course-eligibility"><strong>Eligibility:</strong> Passed Class 8 minimum.</div>
+            <div class="course-highlight">Agriculture, IT, Business & Trade courses</div>
+            <div class="course-highlight">Government-recognized certification</div>
+            <div class="course-highlight">Job-ready skills + academic certificate</div>
+            <a href="https://wa.me/917736123406?text=I%20want%20to%20know%20about%20NIOS%20Vocational%20Programs." class="btn btn-primary" style="width:100%;justify-content:center;" target="_blank">Apply Now →</a>
+          </div>
+        </div>
+
+      </div><!-- /nios panel -->
+
+      <!-- HIGHER EDUCATION PANEL -->
+      <div class="tab-panel" data-panel="higher">
+
+        <div class="course-card reveal">
+          <div class="course-card-header" style="background:linear-gradient(135deg,#6b21a8,#9333ea);">
+            <div class="course-emoji">🏛️</div>
+            <h4>Distance UG Degree</h4>
+            <span class="course-badge-header">3–4 Year Program</span>
+          </div>
+          <div class="course-card-body">
+            <div class="course-meta">
+              <span class="course-meta-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 3–4 Years</span>
+              <span class="course-meta-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg> 12th Pass</span>
+            </div>
+            <p class="course-desc">UGC-recognized Bachelor's degree programs through distance mode. BA, BCom, BSc, BBA and more from reputed universities — study from home.</p>
+            <div class="course-eligibility"><strong>Eligibility:</strong> 10+2 pass from any recognized board.</div>
+            <div class="course-highlight">UGC recognized — valid for all jobs</div>
+            <div class="course-highlight">BA, BCom, BSc, BBA, BCA available</div>
+            <div class="course-highlight">Study materials + recorded lectures</div>
+            <a href="https://wa.me/917736123406?text=I%20want%20to%20know%20about%20Distance%20Degree%20programs." class="btn btn-primary" style="width:100%;justify-content:center;background:linear-gradient(135deg,#6b21a8,#9333ea);" target="_blank">Apply Now →</a>
+          </div>
+        </div>
+
+        <div class="course-card reveal" data-delay="100">
+          <div class="course-card-header" style="background:linear-gradient(135deg,#4c1d95,#7c3aed);">
+            <div class="course-emoji">🎓</div>
+            <h4>Distance PG Programs</h4>
+            <span class="course-badge-header">Post Graduate</span>
+          </div>
+          <div class="course-card-body">
+            <div class="course-meta">
+              <span class="course-meta-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 2 Years</span>
+              <span class="course-meta-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg> Degree Holder</span>
+            </div>
+            <p class="course-desc">Advance your career with a postgraduate degree from a UGC-recognized university. MA, MCom, MSc, MBA and more — without leaving your job.</p>
+            <div class="course-eligibility"><strong>Eligibility:</strong> Bachelor's degree in relevant field.</div>
+            <div class="course-highlight">MA, MCom, MSc, MBA, MCA available</div>
+            <div class="course-highlight">Weekend contact classes available</div>
+            <div class="course-highlight">Equivalent to regular PG for all purposes</div>
+            <a href="https://wa.me/917736123406?text=I%20want%20to%20know%20about%20Distance%20PG%20programs." class="btn btn-primary" style="width:100%;justify-content:center;background:linear-gradient(135deg,#4c1d95,#7c3aed);" target="_blank">Apply Now →</a>
+          </div>
+        </div>
+
+        <div class="course-card reveal" data-delay="200">
+          <div class="course-card-header" style="background:linear-gradient(135deg,#7e22ce,#a855f7);">
+            <div class="course-emoji">📜</div>
+            <h4>Diploma Programs</h4>
+            <span class="course-badge-header">1–2 Year Certificate</span>
+          </div>
+          <div class="course-card-body">
+            <div class="course-meta">
+              <span class="course-meta-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 1–2 Years</span>
+              <span class="course-meta-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg> 10th/12th Pass</span>
+            </div>
+            <p class="course-desc">Job-ready diploma programs in Management, Computer Applications, Education, and more. Faster than a full degree and equally impactful for careers.</p>
+            <div class="course-eligibility"><strong>Eligibility:</strong> Minimum 10th pass for most diploma programs.</div>
+            <div class="course-highlight">Diploma in Computer Applications (DCA)</div>
+            <div class="course-highlight">Diploma in Business Management</div>
+            <div class="course-highlight">Diploma in Elementary Education (D.El.Ed)</div>
+            <a href="https://wa.me/917736123406?text=I%20want%20to%20know%20about%20Diploma%20programs." class="btn btn-primary" style="width:100%;justify-content:center;background:linear-gradient(135deg,#7e22ce,#a855f7);" target="_blank">Apply Now →</a>
+          </div>
+        </div>
+
+      </div><!-- /higher panel -->
+
+      <!-- CAREER PANEL -->
+      <div class="tab-panel" data-panel="career">
+
+        <div class="course-card reveal">
+          <div class="course-card-header" style="background:linear-gradient(135deg,#065f46,#059669);">
+            <div class="course-emoji">💡</div>
+            <h4>Skill Development</h4>
+            <span class="course-badge-header">Government Certified</span>
+          </div>
+          <div class="course-card-body">
+            <div class="course-meta">
+              <span class="course-meta-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 1–6 Months</span>
+              <span class="course-meta-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg> Any Level</span>
+            </div>
+            <p class="course-desc">Government-certified skill development programs that equip you with practical, job-ready skills for today's competitive job market.</p>
+            <div class="course-eligibility"><strong>Eligibility:</strong> Open to all — no minimum qualification required.</div>
+            <div class="course-highlight">Government certified programs</div>
+            <div class="course-highlight">Hands-on practical training</div>
+            <div class="course-highlight">Job placement assistance</div>
+            <a href="https://wa.me/917736123406?text=I%20want%20to%20know%20about%20Skill%20Development%20courses." class="btn btn-primary" style="width:100%;justify-content:center;background:linear-gradient(135deg,#065f46,#059669);" target="_blank">Apply Now →</a>
+          </div>
+        </div>
+
+        <div class="course-card reveal" data-delay="100">
+          <div class="course-card-header" style="background:linear-gradient(135deg,#0f766e,#14b8a6);">
+            <div class="course-emoji">💻</div>
+            <h4>Computer Courses</h4>
+            <span class="course-badge-header">IT & Digital Skills</span>
+          </div>
+          <div class="course-card-body">
+            <div class="course-meta">
+              <span class="course-meta-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 1–12 Months</span>
+              <span class="course-meta-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg> Any Level</span>
+            </div>
+            <p class="course-desc">From basic computer literacy to advanced programming — our computer courses are designed to make you digital-ready in the modern economy.</p>
+            <div class="course-eligibility"><strong>Eligibility:</strong> Open to all — beginners welcome.</div>
+            <div class="course-highlight">MS Office, Tally, DCA, ADCA</div>
+            <div class="course-highlight">Web Design & Digital Marketing</div>
+            <div class="course-highlight">Programming: Python, Java basics</div>
+            <a href="https://wa.me/917736123406?text=I%20want%20to%20know%20about%20Computer%20Courses." class="btn btn-primary" style="width:100%;justify-content:center;background:linear-gradient(135deg,#0f766e,#14b8a6);" target="_blank">Apply Now →</a>
+          </div>
+        </div>
+
+        <div class="course-card reveal" data-delay="200">
+          <div class="course-card-header" style="background:linear-gradient(135deg,#b45309,#f59e0b);">
+            <div class="course-emoji">🏅</div>
+            <h4>Professional Certifications</h4>
+            <span class="course-badge-header">Industry Recognized</span>
+          </div>
+          <div class="course-card-body">
+            <div class="course-meta">
+              <span class="course-meta-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 1–3 Months</span>
+              <span class="course-meta-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg> Any</span>
+            </div>
+            <p class="course-desc">Earn industry-recognized certifications that boost your resume and career prospects. Short, focused programs with high-impact results.</p>
+            <div class="course-eligibility"><strong>Eligibility:</strong> Based on individual certification requirements.</div>
+            <div class="course-highlight">Accounting & Finance certifications</div>
+            <div class="course-highlight">HR & Management programs</div>
+            <div class="course-highlight">Digital Marketing & E-commerce</div>
+            <a href="https://wa.me/917736123406?text=I%20want%20to%20know%20about%20Professional%20Certifications." class="btn btn-primary" style="width:100%;justify-content:center;background:linear-gradient(135deg,#b45309,#f59e0b);" target="_blank">Apply Now →</a>
+          </div>
+        </div>
+
+      </div><!-- /career panel -->
+
+      <!-- CTA -->
+      <div style="text-align:center;margin-top:56px;" class="reveal">
+        <p style="font-size:1.05rem;margin-bottom:20px;">Not sure which course is right for you? Talk to our counselors!</p>
+        <a href="https://wa.me/917736123406?text=Hi%2C%20I%20need%20course%20guidance%20from%20Eduvix%20Academy." class="btn btn-whatsapp btn-lg" target="_blank">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Get Free Course Counseling
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand"><div class="logo"><img src="images/logo.png" alt="Eduvix Academy" style="height:44px;filter:brightness(0) invert(1);" /></div><p style="margin-top:12px;">Kerala's most trusted partner for NIOS, Distance Degree and Career Programs.</p></div>
+        <div class="footer-col"><h4>Quick Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="courses.html">Courses</a></li><li><a href="admissions.html">Admissions</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+        <div class="footer-col"><h4>Programs</h4><ul><li><a href="#">NIOS Secondary</a></li><li><a href="#">NIOS Sr. Secondary</a></li><li><a href="#">Distance Degree</a></li><li><a href="#">Career Programs</a></li></ul></div>
+        <div class="footer-col"><h4>Contact Us</h4>
+          <div class="footer-contact-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.63A2 2 0 012 .18h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.09-1.09a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92z"/></svg><a href="tel:+917736123406" style="color:rgba(255,255,255,.65);">+91 77361 23406</a></div>
+          <a href="https://wa.me/917736123406" class="btn btn-whatsapp" style="margin-top:16px;" target="_blank">Chat on WhatsApp</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom"><div class="container"><p>© 2026 Eduvix Academy. All Rights Reserved.</p></div></div>
+  </footer>
+
+  <div class="float-buttons">
+    <a href="admissions.html" class="float-apply"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>Apply Now</a>
+    <a href="https://wa.me/917736123406?text=Hi%20Eduvix%20Academy!" class="float-wa" target="_blank">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      <span class="wa-label">WhatsApp Us</span>
+    </a>
+  </div>
+  <button class="scroll-top" id="scrollTop"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 15l-6-6-6 6"/></svg></button>
+  <script src="js/main.js"></script>
+</body>
+</html>

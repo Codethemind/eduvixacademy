@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eduvix Academy — Learn Beyond Limits | NIOS, Degree & Career Programs</title>
+  <meta name="description" content="Eduvix Academy helps students achieve their academic goals through NIOS, Open Schooling, Degree, PG, Diploma and Career Programs with flexible, student-friendly support across Kerala." />
+  <meta name="keywords" content="Eduvix Academy, NIOS Kerala, open schooling, distance education, 10th 12th pass Kerala, career programs" />
+  <meta property="og:title" content="Eduvix Academy — Learn Beyond Limits" />
+  <meta property="og:description" content="Flexible education solutions for NIOS, Degree, PG, Diploma and Career Programs." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" type="image/png" href="images/logo.png" />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    /* ---------- Hero Override (home-specific) ---------- */
+    .hero-sub { color: rgba(255,255,255,.70); }
+    /* ---------- Features Section ---------- */
+    .features-section { background: var(--gray-50); }
+    /* ---------- Blog ---------- */
+    .blog-section { background: var(--white); }
+    /* ---------- CTA Banner ---------- */
+    .cta-banner {
+      background: linear-gradient(135deg, #0d1f5c, var(--primary), #2d55c9);
+      border-radius: var(--radius-xl);
+      padding: 60px 48px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      margin: 0 20px;
+    }
+    .cta-banner::before {
+      content: '';
+      position: absolute;
+      top: -60px; right: -60px;
+      width: 250px; height: 250px;
+      background: radial-gradient(circle, rgba(244,180,0,.2), transparent 70%);
+    }
+    .cta-banner h2 { color: var(--white); margin-bottom: 12px; }
+    .cta-banner p { color: rgba(255,255,255,.7); margin-bottom: 32px; max-width: 560px; margin-left: auto; margin-right: auto; }
+    .cta-banner .cta-btns { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+  </style>
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar transparent" id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="navbar-inner">
+      <a href="index.html" class="logo" aria-label="Eduvix Academy Home">
+        <img src="images/logo.png" alt="Eduvix Academy Logo" />
+      </a>
+      <ul class="nav-links" role="list">
+        <li><a href="index.html"      class="nav-link active">Home</a></li>
+        <li><a href="about.html"      class="nav-link">About</a></li>
+        <li><a href="courses.html"    class="nav-link">Courses</a></li>
+        <li><a href="admissions.html" class="nav-link">Admissions</a></li>
+        <li><a href="support.html"    class="nav-link">Support</a></li>
+        <li><a href="success-stories.html" class="nav-link">Success Stories</a></li>
+        <li><a href="contact.html"    class="nav-link">Contact</a></li>
+      </ul>
+      <a href="admissions.html" class="btn btn-gold btn-sm nav-cta">Apply Now</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu" role="menu">
+      <a href="index.html"      class="nav-link">Home</a>
+      <a href="about.html"      class="nav-link">About</a>
+      <a href="courses.html"    class="nav-link">Courses</a>
+      <a href="admissions.html" class="nav-link">Admissions</a>
+      <a href="support.html"    class="nav-link">Support</a>
+      <a href="success-stories.html" class="nav-link">Success Stories</a>
+      <a href="contact.html"    class="nav-link">Contact</a>
+      <a href="admissions.html" class="btn btn-primary">Apply Now</a>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="hero" aria-label="Hero section">
+    <div class="hero-bg-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+    </div>
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="dot"></span>
+            Kerala's Trusted Education Partner
+          </div>
+          <h1>Learn<br /><span class="gold">Beyond Limits</span></h1>
+          <p class="hero-tagline">— Eduvix Academy</p>
+          <p class="hero-sub">Helping students achieve their academic goals through flexible learning and complete guidance. NIOS • Degree • Career Programs.</p>
+          <div class="hero-actions">
+            <a href="admissions.html" class="btn btn-gold btn-lg" id="heroApplyBtn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              Apply Now
+            </a>
+            <a href="https://wa.me/917736123406?text=Hi%20Eduvix%20Academy%2C%20I%20want%20to%20know%20more%20about%20your%20courses." class="btn btn-outline" target="_blank" rel="noopener" id="heroWaBtn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              WhatsApp Us
+            </a>
+          </div>
+          <div class="hero-stats">
+            <div class="hero-stat">
+              <div class="num">5000+</div>
+              <div class="label">Students Enrolled</div>
+            </div>
+            <div class="hero-stat">
+              <div class="num">98%</div>
+              <div class="label">Pass Rate</div>
+            </div>
+            <div class="hero-stat">
+              <div class="num">50+</div>
+              <div class="label">Courses Available</div>
+            </div>
+          </div>
+        </div>
+        <div class="hero-img-wrapper">
+          <img src="images/hero.png" alt="Eduvix Academy students celebrating graduation" loading="eager" />
+          <div class="hero-img-card hero-img-card--tl">
+            <div class="icon icon-gold">🏆</div>
+            <div>
+              <div class="card-label">Success Rate</div>
+              <div class="card-value">98% Pass Rate</div>
+            </div>
+          </div>
+          <div class="hero-img-card hero-img-card--br">
+            <div class="icon icon-blue">📚</div>
+            <div>
+              <div class="card-label">Programs</div>
+              <div class="card-value">NIOS &amp; Degree</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MARQUEE STRIP ===== -->
+  <div class="features-strip" aria-hidden="true">
+    <div class="features-strip-track">
+      <div class="strip-item"><span class="dot">✦</span> NIOS Registration</div>
+      <div class="strip-item"><span class="dot">✦</span> Recorded Classes</div>
+      <div class="strip-item"><span class="dot">✦</span> Study Materials</div>
+      <div class="strip-item"><span class="dot">✦</span> Exam Guidance</div>
+      <div class="strip-item"><span class="dot">✦</span> Personal Support</div>
+      <div class="strip-item"><span class="dot">✦</span> Mobile App</div>
+      <div class="strip-item"><span class="dot">✦</span> Career Guidance</div>
+      <div class="strip-item"><span class="dot">✦</span> Distance Degree</div>
+      <div class="strip-item"><span class="dot">✦</span> Kerala-wide Support</div>
+      <!-- Duplicate for seamless loop -->
+      <div class="strip-item"><span class="dot">✦</span> NIOS Registration</div>
+      <div class="strip-item"><span class="dot">✦</span> Recorded Classes</div>
+      <div class="strip-item"><span class="dot">✦</span> Study Materials</div>
+      <div class="strip-item"><span class="dot">✦</span> Exam Guidance</div>
+      <div class="strip-item"><span class="dot">✦</span> Personal Support</div>
+      <div class="strip-item"><span class="dot">✦</span> Mobile App</div>
+      <div class="strip-item"><span class="dot">✦</span> Career Guidance</div>
+      <div class="strip-item"><span class="dot">✦</span> Distance Degree</div>
+      <div class="strip-item"><span class="dot">✦</span> Kerala-wide Support</div>
+    </div>
+  </div>
+
+  <!-- ===== FEATURES SECTION ===== -->
+  <section class="section features-section" id="features">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="badge badge-gold">✨ What We Offer</span>
+        <h2>Everything You Need to <span class="gradient-text">Succeed</span></h2>
+        <p>From registration to result, we support every step of your academic journey with world-class resources.</p>
+      </div>
+      <div class="grid-4" style="gap:24px;">
+        <div class="feature-card reveal" data-delay="0">
+          <div class="feature-icon">📝</div>
+          <h4>Online Registration</h4>
+          <p>Hassle-free online registration support for all NIOS and university programs.</p>
+        </div>
+        <div class="feature-card reveal" data-delay="80">
+          <div class="feature-icon">🎥</div>
+          <h4>Recorded Classes</h4>
+          <p>Access high-quality recorded lectures anytime, anywhere on any device.</p>
+        </div>
+        <div class="feature-card reveal" data-delay="160">
+          <div class="feature-icon">📖</div>
+          <h4>Study Materials</h4>
+          <p>Comprehensive digital and print study materials tailored to your syllabus.</p>
+        </div>
+        <div class="feature-card reveal" data-delay="240">
+          <div class="feature-icon">📋</div>
+          <h4>Assignments</h4>
+          <p>Structured assignments with timely feedback to keep you on track.</p>
+        </div>
+        <div class="feature-card reveal" data-delay="320">
+          <div class="feature-icon">🎯</div>
+          <h4>Exam Guidance</h4>
+          <p>Expert tips, practice papers, and dedicated exam preparation sessions.</p>
+        </div>
+        <div class="feature-card reveal" data-delay="400">
+          <div class="feature-icon">🤝</div>
+          <h4>Personal Support</h4>
+          <p>One-on-one counseling and academic support from experienced mentors.</p>
+        </div>
+        <div class="feature-card reveal" data-delay="480">
+          <div class="feature-icon">📱</div>
+          <h4>Mobile Learning App</h4>
+          <p>Study on the go with our student-friendly mobile learning application.</p>
+        </div>
+        <div class="feature-card reveal" data-delay="560">
+          <div class="feature-icon">🌐</div>
+          <h4>Kerala-wide Network</h4>
+          <p>Support centers and counselors available across all districts in Kerala.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== STATS ===== -->
+  <section class="stats-section" id="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-card reveal">
+          <div class="stat-num" data-target="5000" data-suffix="+">0+</div>
+          <div class="stat-label">Students Enrolled</div>
+        </div>
+        <div class="stat-card reveal" data-delay="100">
+          <div class="stat-num" data-target="98" data-suffix="%">0%</div>
+          <div class="stat-label">Pass Rate</div>
+        </div>
+        <div class="stat-card reveal" data-delay="200">
+          <div class="stat-num" data-target="50" data-suffix="+">0+</div>
+          <div class="stat-label">Courses Available</div>
+        </div>
+        <div class="stat-card reveal" data-delay="300">
+          <div class="stat-num" data-target="10" data-suffix="+">0+</div>
+          <div class="stat-label">Years of Experience</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WHY CHOOSE ===== -->
+  <section class="section why-section" id="why">
+    <div class="container">
+      <div class="why-grid">
+        <div class="why-img-block reveal">
+          <img src="images/about-team.png" alt="Eduvix Academy dedicated team" loading="lazy" />
+          <div class="why-img-badge">
+            <div class="big-num">10+</div>
+            <div class="text">
+              <div class="label">Years of</div>
+              <div class="val">Trusted Service</div>
+            </div>
+          </div>
+        </div>
+        <div class="why-content reveal" data-delay="120">
+          <span class="badge badge-primary">⭐ Why Eduvix</span>
+          <h2 style="margin-top:16px;">Why Students <span class="gradient-text">Choose Us</span></h2>
+          <p style="margin:14px 0 28px;">We are more than an educational institution — we are your personal academic partner, committed to your success every step of the way.</p>
+          <div class="why-list">
+            <div class="why-item">
+              <div class="why-icon">👨‍🏫</div>
+              <div>
+                <h4>Experienced Team</h4>
+                <p>Our faculty and counselors bring years of experience helping students navigate every academic challenge.</p>
+              </div>
+            </div>
+            <div class="why-item">
+              <div class="why-icon">🕒</div>
+              <div>
+                <h4>Flexible Learning</h4>
+                <p>Study at your own pace with online classes, recorded lectures, and self-paced study material.</p>
+              </div>
+            </div>
+            <div class="why-item">
+              <div class="why-icon">💬</div>
+              <div>
+                <h4>Student-Friendly Support</h4>
+                <p>Dedicated WhatsApp support, helplines, and in-person counseling available when you need it.</p>
+              </div>
+            </div>
+            <div class="why-item">
+              <div class="why-icon">🚀</div>
+              <div>
+                <h4>Career Guidance</h4>
+                <p>Beyond academics, we help you plan your career with professional skill development programs.</p>
+              </div>
+            </div>
+            <div class="why-item">
+              <div class="why-icon">🗺️</div>
+              <div>
+                <h4>Kerala-wide Support</h4>
+                <p>Our counselors and support teams are present across all districts in Kerala for local assistance.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== COURSES PREVIEW ===== -->
+  <section class="section" style="background:var(--gray-50);" id="courses-preview">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="badge badge-gold">📚 Programs</span>
+        <h2>Explore Our <span class="gradient-text">Courses</span></h2>
+        <p>From NIOS 10th &amp; 12th to Degree programs and career skills — we have the right program for your goals.</p>
+      </div>
+      <div class="grid-3" style="gap:28px;">
+        <div class="course-card reveal">
+          <div class="course-card-header">
+            <div class="course-emoji">🎓</div>
+            <h4>NIOS Programs</h4>
+            <span class="course-badge-header">Open School</span>
+          </div>
+          <div class="course-card-body">
+            <div class="course-meta">
+              <span class="course-meta-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> Flexible Duration</span>
+              <span class="course-meta-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg> All Ages</span>
+            </div>
+            <p class="course-desc">Secondary (10th), Senior Secondary (12th), Transfer of Credit (TOC) and failed student support — complete your education with NIOS.</p>
+            <div class="course-eligibility"><strong>Eligibility:</strong> No minimum qualification required for NIOS Secondary.</div>
+            <a href="courses.html" class="btn btn-primary" style="width:100%;justify-content:center;">View Courses</a>
+          </div>
+        </div>
+        <div class="course-card reveal" data-delay="100">
+          <div class="course-card-header" style="background:linear-gradient(135deg,#6b21a8,#9333ea);">
+            <div class="course-emoji">🏛️</div>
+            <h4>Higher Education</h4>
+            <span class="course-badge-header">Degree / PG / Diploma</span>
+          </div>
+          <div class="course-card-body">
+            <div class="course-meta">
+              <span class="course-meta-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 1–4 Years</span>
+              <span class="course-meta-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg> 12th Pass</span>
+            </div>
+            <p class="course-desc">Accredited Degree, PG, and Diploma programs through distance education from leading universities. Study at your own pace.</p>
+            <div class="course-eligibility"><strong>Eligibility:</strong> 10+2 pass for UG programs; UG degree for PG programs.</div>
+            <a href="courses.html" class="btn btn-primary" style="width:100%;justify-content:center;background:linear-gradient(135deg,#6b21a8,#9333ea);">View Courses</a>
+          </div>
+        </div>
+        <div class="course-card reveal" data-delay="200">
+          <div class="course-card-header" style="background:linear-gradient(135deg,#065f46,#059669);">
+            <div class="course-emoji">💼</div>
+            <h4>Career Programs</h4>
+            <span class="course-badge-header">Skills &amp; Certification</span>
+          </div>
+          <div class="course-card-body">
+            <div class="course-meta">
+              <span class="course-meta-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 1–12 Months</span>
+              <span class="course-meta-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg> Any Level</span>
+            </div>
+            <p class="course-desc">Skill development, computer courses, and professional certifications to boost your career prospects in today's competitive market.</p>
+            <div class="course-eligibility"><strong>Eligibility:</strong> Open to all — students, graduates and working professionals.</div>
+            <a href="courses.html" class="btn btn-primary" style="width:100%;justify-content:center;background:linear-gradient(135deg,#065f46,#059669);">View Courses</a>
+          </div>
+        </div>
+      </div>
+      <div style="text-align:center;margin-top:40px;">
+        <a href="courses.html" class="btn btn-outline-primary btn-lg">Browse All Courses →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section class="section testimonials-section" id="testimonials">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="badge badge-gold">❤️ Success Stories</span>
+        <h2>What Our <span class="gradient-text">Students Say</span></h2>
+        <p>Real stories from real students who transformed their lives through Eduvix Academy.</p>
+      </div>
+      <div class="grid-3">
+        <div class="testimonial-card reveal">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"Eduvix Academy changed my life. After failing my 12th, I thought my future was over. With their NIOS support, I passed with distinction and am now pursuing a degree!"</p>
+          <div class="testimonial-author">
+            <div style="width:52px;height:52px;border-radius:50%;background:linear-gradient(135deg,var(--primary),var(--primary-light));display:flex;align-items:center;justify-content:center;font-size:1.4rem;border:3px solid var(--gold);">👩‍🎓</div>
+            <div>
+              <div class="author-name">Anjali Menon</div>
+              <div class="author-course">NIOS Senior Secondary, Thrissur</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal" data-delay="100">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"The recorded classes and study materials are excellent. The team is always available on WhatsApp to clear doubts. I completed my TOC in record time!"</p>
+          <div class="testimonial-author">
+            <div style="width:52px;height:52px;border-radius:50%;background:linear-gradient(135deg,#059669,#10b981);display:flex;align-items:center;justify-content:center;font-size:1.4rem;border:3px solid var(--gold);">👨‍🎓</div>
+            <div>
+              <div class="author-name">Rahul Krishna</div>
+              <div class="author-course">NIOS TOC Program, Kozhikode</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal" data-delay="200">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"I enrolled in a distance Degree program through Eduvix while working full-time. Their flexible support made it possible to balance both. Highly recommended!"</p>
+          <div class="testimonial-author">
+            <div style="width:52px;height:52px;border-radius:50%;background:linear-gradient(135deg,#7c3aed,#9333ea);display:flex;align-items:center;justify-content:center;font-size:1.4rem;border:3px solid var(--gold);">👩‍💼</div>
+            <div>
+              <div class="author-name">Priya Nair</div>
+              <div class="author-course">Distance Degree Program, Kochi</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="text-align:center;margin-top:40px;">
+        <a href="success-stories.html" class="btn btn-outline-primary">View All Stories →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section class="section faq-section" id="faq">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="badge badge-primary">❓ FAQ</span>
+        <h2>Frequently Asked <span class="gradient-text">Questions</span></h2>
+        <p>Have questions? We've got answers. Browse through our most commonly asked questions.</p>
+      </div>
+      <div class="faq-list reveal">
+        <div class="faq-item open">
+          <div class="faq-question">What is NIOS and how can Eduvix Academy help me?<span class="faq-icon">+</span></div>
+          <div class="faq-answer">NIOS (National Institute of Open Schooling) is India's largest open school that allows students to complete their 10th or 12th education flexibly. Eduvix Academy provides complete registration support, study materials, recorded classes, and exam guidance for NIOS programs.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">Can I enroll if I have failed my 10th or 12th exams?<span class="faq-icon">+</span></div>
+          <div class="faq-answer">Absolutely! Eduvix Academy has specialized programs for students who have failed their board exams. Through NIOS, you can give exams for only the subjects you failed (Transfer of Credit / TOC) without repeating the entire year.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">Are the Degree programs valid and recognized?<span class="faq-icon">+</span></div>
+          <div class="faq-answer">Yes, all Degree, PG, and Diploma programs offered through Eduvix Academy are UGC-recognized and from accredited universities. They are equivalent to regular degrees and accepted for government and private jobs.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">How do I attend classes? Are they online?<span class="faq-icon">+</span></div>
+          <div class="faq-answer">We offer a hybrid learning model — recorded video lectures you can watch anytime, live doubt-clearing sessions, digital study materials, and WhatsApp-based personal support. You can study from anywhere in Kerala or India.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">What are the fees and are there any scholarships?<span class="faq-icon">+</span></div>
+          <div class="faq-answer">Fees vary by program and are very affordable. We also offer flexible installment payment options. Contact our counselors for detailed fee information and to know about any applicable scholarship schemes.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">How quickly can I get admission?<span class="faq-icon">+</span></div>
+          <div class="faq-answer">Admission is quick and simple! Contact us via WhatsApp or fill the inquiry form, and our counselors will guide you through the entire process. Admission for NIOS is open throughout the year with multiple admission cycles.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== BLOG ===== -->
+  <section class="section blog-section" id="blog">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="badge badge-gold">📰 Blog</span>
+        <h2>Latest <span class="gradient-text">Insights</span></h2>
+        <p>Stay updated with the latest news, tips and guides for your educational journey.</p>
+      </div>
+      <div class="grid-3">
+        <div class="blog-card reveal">
+          <div class="blog-img" style="background:linear-gradient(135deg,var(--primary),var(--primary-light));display:flex;align-items:center;justify-content:center;font-size:4rem;">📚</div>
+          <div class="blog-body">
+            <span class="blog-cat">NIOS</span>
+            <div class="blog-title">NIOS Admission 2025–26: Complete Step-by-Step Guide for Kerala Students</div>
+            <p style="font-size:.85rem;margin-top:8px;">Everything you need to know about registering for NIOS Secondary and Senior Secondary this year.</p>
+            <div class="blog-meta"><span>June 10, 2026</span><span>•</span><span>5 min read</span></div>
+          </div>
+        </div>
+        <div class="blog-card reveal" data-delay="100">
+          <div class="blog-img" style="background:linear-gradient(135deg,#6b21a8,#9333ea);display:flex;align-items:center;justify-content:center;font-size:4rem;">🎓</div>
+          <div class="blog-body">
+            <span class="blog-cat">Higher Education</span>
+            <div class="blog-title">Top 5 Distance Degree Programs for Working Professionals in 2026</div>
+            <p style="font-size:.85rem;margin-top:8px;">Explore the best UGC-recognized distance learning degree programs that fit around your work schedule.</p>
+            <div class="blog-meta"><span>June 5, 2026</span><span>•</span><span>7 min read</span></div>
+          </div>
+        </div>
+        <div class="blog-card reveal" data-delay="200">
+          <div class="blog-img" style="background:linear-gradient(135deg,#065f46,#059669);display:flex;align-items:center;justify-content:center;font-size:4rem;">💼</div>
+          <div class="blog-body">
+            <span class="blog-cat">Career</span>
+            <div class="blog-title">How to Build a Career with Skill Development Courses After 10th</div>
+            <p style="font-size:.85rem;margin-top:8px;">A practical guide to launching a successful career through skill development and certifications.</p>
+            <div class="blog-meta"><span>May 28, 2026</span><span>•</span><span>6 min read</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA BANNER ===== -->
+  <section class="section--sm" style="padding:40px 0 80px;">
+    <div class="container">
+      <div class="cta-banner reveal">
+        <span class="badge badge-gold" style="margin-bottom:20px;">🚀 Start Today</span>
+        <h2>Ready to Begin Your <span style="color:var(--gold)">Academic Journey?</span></h2>
+        <p>Join 5000+ students who have already transformed their future with Eduvix Academy. Apply now and take the first step!</p>
+        <div class="cta-btns">
+          <a href="admissions.html" class="btn btn-gold btn-lg">Apply Now — It's Free!</a>
+          <a href="https://wa.me/917736123406?text=Hi%20Eduvix%20Academy%2C%20I%20want%20to%20know%20more%20about%20your%20courses." class="btn btn-outline" target="_blank" rel="noopener">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Chat on WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo">
+            <img src="images/logo.png" alt="Eduvix Academy" style="height:44px;filter:brightness(0) invert(1);" />
+          </div>
+          <p style="margin-top:12px;">Eduvix Academy — Learn Beyond Limits. Kerala's most trusted partner for NIOS, Distance Degree, and Career Programs. Empowering every learner to succeed.</p>
+          <div class="footer-socials" style="margin-top:20px;">
+            <a href="#" class="social-icon" aria-label="Facebook">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+            </a>
+            <a href="#" class="social-icon" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="https://wa.me/917736123406" class="social-icon" aria-label="WhatsApp">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            </a>
+            <a href="#" class="social-icon" aria-label="YouTube">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 00-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 00-1.95 1.96A29 29 0 001 12a29 29 0 00.46 5.58A2.78 2.78 0 003.41 19.54C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 001.95-1.96A29 29 0 0023 12a29 29 0 00-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="white"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="admissions.html">Admissions</a></li>
+            <li><a href="support.html">Student Support</a></li>
+            <li><a href="success-stories.html">Success Stories</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Programs</h4>
+          <ul>
+            <li><a href="courses.html">NIOS Secondary (10th)</a></li>
+            <li><a href="courses.html">NIOS Sr. Secondary (12th)</a></li>
+            <li><a href="courses.html">Transfer of Credit (TOC)</a></li>
+            <li><a href="courses.html">Distance Degree</a></li>
+            <li><a href="courses.html">PG Programs</a></li>
+            <li><a href="courses.html">Diploma Programs</a></li>
+            <li><a href="courses.html">Career Programs</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact Us</h4>
+          <div class="footer-contact-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.63A2 2 0 012 .18h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.09-1.09a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92z"/></svg>
+            <a href="tel:+917736123406" style="color:rgba(255,255,255,.65);">+91 77361 23406</a>
+          </div>
+          <div class="footer-contact-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <a href="mailto:info@eduvixacademy.com" style="color:rgba(255,255,255,.65);">info@eduvixacademy.com</a>
+          </div>
+          <div class="footer-contact-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>Kerala, India</span>
+          </div>
+          <a href="https://wa.me/917736123406?text=Hi%20Eduvix%20Academy!" class="btn btn-whatsapp" style="margin-top:16px;" target="_blank" rel="noopener">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Chat on WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>© 2026 Eduvix Academy. All Rights Reserved. | Designed with ❤️ in Kerala</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== FLOATING BUTTONS ===== -->
+  <div class="float-buttons">
+    <a href="admissions.html" class="float-apply" id="floatApply" aria-label="Apply Now">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      Apply Now
+    </a>
+    <a href="https://wa.me/917736123406?text=Hi%20Eduvix%20Academy%2C%20I%20want%20to%20know%20more%20about%20your%20courses." class="float-wa" target="_blank" rel="noopener" id="floatWa" aria-label="Chat on WhatsApp">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      <span class="wa-label">WhatsApp Us</span>
+    </a>
+  </div>
+  <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

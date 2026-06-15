@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Support — Eduvix Academy | Classes, Materials & Guidance</title>
+  <meta name="description" content="Eduvix Academy provides recorded classes, study materials, assignment help, mobile app support, exam preparation, and one-to-one guidance for all enrolled students." />
+  <link rel="icon" type="image/png" href="images/logo.png" />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .support-hero-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
+    .app-section {
+      background: linear-gradient(135deg, #0d1f5c, var(--primary), #2d55c9);
+      border-radius: var(--radius-xl);
+      padding: 60px 56px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 56px;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .app-section::before {
+      content: '';
+      position: absolute;
+      top: -80px; right: -80px;
+      width: 300px; height: 300px;
+      background: radial-gradient(circle, rgba(244,180,0,.18), transparent 70%);
+    }
+    .app-section h2 { color: var(--white); }
+    .app-section p { color: rgba(255,255,255,.72); }
+    .app-feature { display: flex; gap: 12px; align-items: center; margin-bottom: 14px; }
+    .app-feature::before { content: '✓'; color: var(--gold); font-weight: 900; font-size: 1.1rem; }
+    .app-feature span { color: rgba(255,255,255,.8); font-size: .9rem; }
+    .app-mockup {
+      background: rgba(255,255,255,.08);
+      border: 1.5px solid rgba(255,255,255,.15);
+      border-radius: var(--radius-xl);
+      padding: 32px;
+      text-align: center;
+      backdrop-filter: blur(10px);
+    }
+    .app-mockup .emoji { font-size: 4rem; margin-bottom: 12px; }
+    .app-mockup h4 { color: var(--white); }
+    .app-mockup p { color: rgba(255,255,255,.6); font-size:.85rem; }
+    .app-store-btns { display: flex; gap: 12px; flex-direction: column; margin-top: 16px; }
+    .app-btn {
+      display: flex; align-items: center; gap: 10px;
+      background: rgba(255,255,255,.12);
+      border: 1.5px solid rgba(255,255,255,.25);
+      border-radius: var(--radius);
+      padding: 10px 16px;
+      color: var(--white);
+      font-size: .82rem;
+      font-weight: 600;
+      transition: all var(--transition);
+    }
+    .app-btn:hover { background: rgba(255,255,255,.22); }
+    .schedule-table {
+      width: 100%;
+      border-collapse: collapse;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+    }
+    .schedule-table th {
+      background: var(--primary);
+      color: var(--white);
+      padding: 14px 20px;
+      text-align: left;
+      font-size: .88rem;
+    }
+    .schedule-table td {
+      padding: 14px 20px;
+      border-bottom: 1px solid var(--gray-100);
+      font-size: .88rem;
+      color: var(--gray-700);
+    }
+    .schedule-table tr:last-child td { border-bottom: none; }
+    .schedule-table tr:nth-child(even) td { background: var(--gray-50); }
+    .badge-live { background: rgba(239,68,68,.12); color:#dc2626; border:1px solid rgba(239,68,68,.3); padding:2px 8px; border-radius:var(--radius-full); font-size:.72rem; font-weight:700; }
+    .badge-recorded { background: rgba(30,58,138,.1); color:var(--primary); border:1px solid rgba(30,58,138,.2); padding:2px 8px; border-radius:var(--radius-full); font-size:.72rem; font-weight:700; }
+    @media(max-width:1024px) { .app-section { grid-template-columns: 1fr; padding: 40px 28px; } .support-hero-cards { grid-template-columns: 1fr 1fr; } }
+    @media(max-width:768px) { .support-hero-cards { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar scrolled" id="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="logo"><img src="images/logo.png" alt="Eduvix Academy Logo" /></a>
+      <ul class="nav-links">
+        <li><a href="index.html"      class="nav-link">Home</a></li>
+        <li><a href="about.html"      class="nav-link">About</a></li>
+        <li><a href="courses.html"    class="nav-link">Courses</a></li>
+        <li><a href="admissions.html" class="nav-link">Admissions</a></li>
+        <li><a href="support.html"    class="nav-link active">Support</a></li>
+        <li><a href="success-stories.html" class="nav-link">Success Stories</a></li>
+        <li><a href="contact.html"    class="nav-link">Contact</a></li>
+      </ul>
+      <a href="admissions.html" class="btn btn-gold btn-sm nav-cta">Apply Now</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html" class="nav-link">Home</a><a href="about.html" class="nav-link">About</a>
+      <a href="courses.html" class="nav-link">Courses</a><a href="admissions.html" class="nav-link">Admissions</a>
+      <a href="support.html" class="nav-link">Support</a><a href="success-stories.html" class="nav-link">Success Stories</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+      <a href="admissions.html" class="btn btn-primary">Apply Now</a>
+    </div>
+  </nav>
+
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumb"><a href="index.html">Home</a><span>/</span><span>Student Support</span></div>
+      <h1>We're With You Every Step</h1>
+      <p>From day one to results day — Eduvix Academy provides complete, personalized support to every enrolled student.</p>
+    </div>
+  </section>
+
+  <!-- SUPPORT CARDS GRID -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="badge badge-gold">🎓 Support System</span>
+        <h2>Complete <span class="gradient-text">Student Support</span></h2>
+        <p>Every tool, resource, and mentor you need — all in one place.</p>
+      </div>
+      <div class="support-hero-cards">
+
+        <div class="support-card reveal">
+          <div class="support-card-inner">
+            <div class="support-icon-wrap">🎥</div>
+            <h3>Recorded Classes</h3>
+            <p>Access a complete library of high-quality recorded lectures by expert faculty. Watch anytime, pause, rewind and rewatch as many times as you need.</p>
+            <div class="support-features">
+              <div class="support-feature">HD video lectures by subject experts</div>
+              <div class="support-feature">Available 24/7 on any device</div>
+              <div class="support-feature">Organized chapter-by-chapter</div>
+              <div class="support-feature">Malayalam & English medium available</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="support-card reveal" data-delay="80">
+          <div class="support-card-inner">
+            <div class="support-icon-wrap">📖</div>
+            <h3>Study Materials</h3>
+            <p>Comprehensive, syllabus-aligned study materials in both digital and print formats. Includes textbooks, summary notes, practice questions, and previous year papers.</p>
+            <div class="support-features">
+              <div class="support-feature">Digital PDFs + printed booklets</div>
+              <div class="support-feature">Chapter-wise summary notes</div>
+              <div class="support-feature">Previous year question papers</div>
+              <div class="support-feature">Model answer sheets included</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="support-card reveal" data-delay="160">
+          <div class="support-card-inner">
+            <div class="support-icon-wrap">📋</div>
+            <h3>Assignments</h3>
+            <p>Structured assignments designed to reinforce learning and track progress. Submit online or offline — our faculty provides personalized feedback on each submission.</p>
+            <div class="support-features">
+              <div class="support-feature">Weekly and monthly assignments</div>
+              <div class="support-feature">Faculty feedback on submissions</div>
+              <div class="support-feature">Online submission portal</div>
+              <div class="support-feature">Progress tracking dashboard</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="support-card reveal" data-delay="240">
+          <div class="support-card-inner">
+            <div class="support-icon-wrap">📱</div>
+            <h3>Mobile App Support</h3>
+            <p>Study on the go with our dedicated mobile app. Access classes, materials, and communicate with mentors — all from your smartphone.</p>
+            <div class="support-features">
+              <div class="support-feature">Available on Android & iOS</div>
+              <div class="support-feature">Offline download mode</div>
+              <div class="support-feature">Push notifications for classes</div>
+              <div class="support-feature">In-app doubt submission</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="support-card reveal" data-delay="320">
+          <div class="support-card-inner">
+            <div class="support-icon-wrap">🎯</div>
+            <h3>Exam Preparation</h3>
+            <p>Targeted exam preparation with mock tests, time-management coaching, and subject-specific strategies. Our students consistently achieve top results.</p>
+            <div class="support-features">
+              <div class="support-feature">Full-length mock exams</div>
+              <div class="support-feature">Subject-wise practice tests</div>
+              <div class="support-feature">Exam strategy sessions</div>
+              <div class="support-feature">Last-mile revision classes</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="support-card reveal" data-delay="400">
+          <div class="support-card-inner">
+            <div class="support-icon-wrap">🤝</div>
+            <h3>One-to-One Guidance</h3>
+            <p>Personal mentorship sessions with dedicated counselors. Whether it's academic support or personal challenges — we listen, understand, and help.</p>
+            <div class="support-features">
+              <div class="support-feature">Personal academic mentor assigned</div>
+              <div class="support-feature">WhatsApp doubt clearing</div>
+              <div class="support-feature">Scheduled 1:1 video sessions</div>
+              <div class="support-feature">Emotional & motivational support</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CLASS SCHEDULE -->
+  <section class="section" style="background:var(--gray-50);">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="badge badge-primary">📅 Schedule</span>
+        <h2>Live Class <span class="gradient-text">Schedule</span></h2>
+        <p>Weekly live doubt-clearing and revision sessions for all programs.</p>
+      </div>
+      <div class="reveal" style="overflow-x:auto;">
+        <table class="schedule-table">
+          <thead>
+            <tr>
+              <th>Day</th>
+              <th>Time</th>
+              <th>Subject / Session</th>
+              <th>Program</th>
+              <th>Type</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Monday</td><td>5:00 PM – 6:30 PM</td><td>Mathematics</td><td>NIOS 10th & 12th</td><td><span class="badge-live">● LIVE</span></td></tr>
+            <tr><td>Tuesday</td><td>5:00 PM – 6:30 PM</td><td>Science &amp; Environmental Studies</td><td>NIOS Secondary</td><td><span class="badge-live">● LIVE</span></td></tr>
+            <tr><td>Wednesday</td><td>4:00 PM – 5:30 PM</td><td>Accountancy &amp; Business Studies</td><td>NIOS Sr. Secondary</td><td><span class="badge-live">● LIVE</span></td></tr>
+            <tr><td>Thursday</td><td>5:00 PM – 7:00 PM</td><td>English &amp; Languages</td><td>All Programs</td><td><span class="badge-live">● LIVE</span></td></tr>
+            <tr><td>Friday</td><td>4:30 PM – 6:00 PM</td><td>Social Science &amp; History</td><td>NIOS Secondary</td><td><span class="badge-live">● LIVE</span></td></tr>
+            <tr><td>Saturday</td><td>10:00 AM – 12:00 PM</td><td>Degree Program Subjects</td><td>Distance Degree</td><td><span class="badge-live">● LIVE</span></td></tr>
+            <tr><td>All Days</td><td>On-Demand</td><td>Recorded Lectures Library</td><td>All Programs</td><td><span class="badge-recorded">🎥 RECORDED</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p style="text-align:center;font-size:.85rem;margin-top:16px;color:var(--text-muted);">* Schedule is subject to change. Enrolled students will be notified via WhatsApp and the app.</p>
+    </div>
+  </section>
+
+  <!-- APP SECTION -->
+  <section class="section">
+    <div class="container">
+      <div class="app-section reveal">
+        <div>
+          <span class="badge badge-gold" style="margin-bottom:20px;">📱 Mobile App</span>
+          <h2 style="margin-bottom:16px;">Learn Anytime, <span style="color:var(--gold)">Anywhere</span></h2>
+          <p style="margin-bottom:24px;">Our mobile app puts your entire education in your pocket. Access classes, materials, assignments and support — on the go.</p>
+          <div class="app-feature"><span>Live &amp; recorded class access</span></div>
+          <div class="app-feature"><span>Offline download for no-internet areas</span></div>
+          <div class="app-feature"><span>Real-time WhatsApp integration</span></div>
+          <div class="app-feature"><span>Assignment submission &amp; tracking</span></div>
+          <div class="app-feature"><span>Exam schedule &amp; reminders</span></div>
+          <div style="margin-top:28px;">
+            <a href="https://wa.me/917736123406?text=I%20want%20to%20download%20the%20Eduvix%20app." class="btn btn-gold" target="_blank">
+              Get App Access via WhatsApp
+            </a>
+          </div>
+        </div>
+        <div class="app-mockup">
+          <div class="emoji">📱</div>
+          <h4>Eduvix Student App</h4>
+          <p style="margin-top:8px;">Complete learning platform in your hands</p>
+          <div class="app-store-btns">
+            <a href="#" class="app-btn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm4.5 14.424l-1.042 1.066-3.458-3.39-3.458 3.39-1.042-1.066 3.458-3.39L7.5 9.643l1.042-1.066 3.458 3.39 3.458-3.39 1.042 1.066-3.458 3.39 3.458 3.391z"/></svg>
+              Download on Play Store
+            </a>
+            <a href="#" class="app-btn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+              Download on App Store
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HELPLINE -->
+  <section class="section" style="background:var(--gray-50);">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="badge badge-gold">💬 Helpline</span>
+        <h2>Need <span class="gradient-text">Help Right Now?</span></h2>
+        <p>Our support team is available 7 days a week to answer your questions.</p>
+      </div>
+      <div class="grid-3">
+        <div class="feature-card reveal" style="text-align:center;">
+          <div class="feature-icon">📞</div>
+          <h4>Phone Support</h4>
+          <p>Call us directly for immediate assistance</p>
+          <a href="tel:+917736123406" class="btn btn-outline-primary" style="margin-top:16px;width:100%;justify-content:center;">+91 77361 23406</a>
+        </div>
+        <div class="feature-card reveal" data-delay="80" style="text-align:center;">
+          <div class="feature-icon">💬</div>
+          <h4>WhatsApp Support</h4>
+          <p>Chat with our team on WhatsApp anytime</p>
+          <a href="https://wa.me/917736123406?text=Hi%20Eduvix%20Academy%2C%20I%20need%20support." class="btn btn-whatsapp" style="margin-top:16px;width:100%;justify-content:center;" target="_blank">Chat Now</a>
+        </div>
+        <div class="feature-card reveal" data-delay="160" style="text-align:center;">
+          <div class="feature-icon">📧</div>
+          <h4>Email Support</h4>
+          <p>Send detailed queries and get responses within 24 hours</p>
+          <a href="mailto:support@eduvixacademy.com" class="btn btn-outline-primary" style="margin-top:16px;width:100%;justify-content:center;">Send Email</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer"><div class="container"><div class="footer-grid">
+    <div class="footer-brand"><div class="logo"><img src="images/logo.png" alt="Eduvix Academy" style="height:44px;filter:brightness(0) invert(1);" /></div><p style="margin-top:12px;">Kerala's most trusted partner for NIOS, Distance Degree and Career Programs.</p></div>
+    <div class="footer-col"><h4>Quick Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="courses.html">Courses</a></li><li><a href="admissions.html">Admissions</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+    <div class="footer-col"><h4>Programs</h4><ul><li><a href="courses.html">NIOS Secondary</a></li><li><a href="courses.html">NIOS Sr. Secondary</a></li><li><a href="courses.html">Distance Degree</a></li><li><a href="courses.html">Career Programs</a></li></ul></div>
+    <div class="footer-col"><h4>Contact</h4><div class="footer-contact-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.63A2 2 0 012 .18h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.09-1.09a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92z"/></svg><a href="tel:+917736123406" style="color:rgba(255,255,255,.65);">+91 77361 23406</a></div><a href="https://wa.me/917736123406" class="btn btn-whatsapp" style="margin-top:16px;" target="_blank">Chat on WhatsApp</a></div>
+  </div></div><div class="footer-bottom"><div class="container"><p>© 2026 Eduvix Academy. All Rights Reserved.</p></div></div></footer>
+
+  <div class="float-buttons">
+    <a href="admissions.html" class="float-apply"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>Apply Now</a>
+    <a href="https://wa.me/917736123406?text=Hi%20Eduvix%20Academy!" class="float-wa" target="_blank">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      <span class="wa-label">WhatsApp Us</span>
+    </a>
+  </div>
+  <button class="scroll-top" id="scrollTop"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 15l-6-6-6 6"/></svg></button>
+  <script src="js/main.js"></script>
+</body>
+</html>
